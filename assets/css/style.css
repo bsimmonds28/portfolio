@@ -1,0 +1,181 @@
+:root {
+    --bg-color: #EBE9EF;
+    --font-color: #21192F;
+    --title-color: #316084; 
+    --box-color: #9D7785;
+    --font: Georgia, 'Times New Roman', Times, serif;
+}
+
+* {
+    background-color: var(--bg-color);
+    font-family: var(--font);
+    color: var(--font-color);
+    line-height: 1;
+    font-style: normal;
+    text-decoration: none;
+}
+
+header {
+    height: 100px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#profile {
+    border-radius: 50%;
+    width: 15%;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+#nav {
+    position: relative;
+    bottom: 60px;
+    border: solid var(--font-color) 1px;
+    margin: 15px 20px 15px 20px;
+    padding: 7px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex: 0 0 15%;
+    float: right;
+    font-size: 28px;
+}
+
+main {
+    background-image: url(Main-Image.png);
+    background-position: center center;
+    background-size: 100% auto;
+    height: 600px;
+    margin: 20px 0 20px 0;
+}
+
+#heading {
+    position: absolute;
+    top: 40%;
+    margin: 0 0 0 30%;
+    border: solid var(--bg-color) 3px;
+    padding: 15px;
+    background: none;
+    width: 600px;
+}
+
+#heading h1, #heading h2 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    background: none;
+}
+
+#heading h2 {
+    font-size: 30px;
+    font-style: italic;
+    line-height: 50px;
+}
+
+section {
+    display: flex inline-block;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 100px;
+}
+
+article {
+    margin-bottom: 100px;
+}
+
+article p {
+    font-size: 18px;
+    margin: 20px;
+}
+
+h3 {
+    color: var(--title-color);
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.project-boxes {
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--box-color);
+    margin: 25px;
+    display: inline-flex;
+    flex: 0 0 30%;
+    background-image: url(Main-Image.png);
+    background-position: center center;
+    background-size: 100%;
+}
+
+#project-link, #view-resume {
+    color: var(--bg-color);
+    font-size: 24px;
+    font-weight: 200;
+    background: none;
+    padding: 100px;
+}
+
+h5 {
+    display: inline-flex;
+    flex: 0 0 30%;
+    margin: 25px 225px 25px 25px;
+    background: none;
+    padding: 7px;
+}
+
+#contact {
+    background: var(--box-color);
+    font-size: 24px;
+    color: var(--bg-color);
+    padding: 15px;
+}
+
+footer {
+    border-top: solid var(--box-color) 1px;
+    padding: 50px;
+    text-align: center;
+}
+
+h6 {
+    background: none;
+    color: var(--box-color);
+    font-size: 24px;
+}
+
+#nav:hover {
+    background-color: var(--box-color);
+}
+
+#project-link:hover, #view-resume:hover {
+    font-size: 40px;
+    padding: 125px;
+}
+
+#contact:hover {
+    background-color: var(--title-color);
+}
+
+@media screen and (max-width: 992px) {
+    #heading {
+        margin: 0 0 0 20%;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    #profile {
+        align-items: center;
+    }
+    #nav {
+        bottom: 275px;
+    }
+    article {
+        flex: 0 0 75%;
+    }
+    #heading {
+        top: 80%;
+        margin: 0 0 0 10%;
+    }
+    header {
+        height: 400px;
+    }
+  }
