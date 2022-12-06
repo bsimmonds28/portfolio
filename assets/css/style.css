@@ -6,7 +6,6 @@
     --font: Georgia, 'Times New Roman', Times, serif;
 }
 
-
 * {
     background-color: var(--bg-color);
     font-family: var(--font);
